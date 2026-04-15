@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vaccine Registration</title>
+</head>
+<body>
+    <h2>Vaccine Registration Form</h2>
+    <form action="process.php" method="POST">
+        Name: <input type="text" name="username"><br><br>
+        
+        Gender: 
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female <br><br>
+        
+        Address: <br>
+        <textarea name="address"></textarea><br><br>
+        
+        Division: 
+        <select name="division">
+            <option value="">Select Division</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Rangpur">Rangpur</option>
+        </select><br><br>
+        
+        Country:
+        <select name="country">
+            <option value="">Select Country</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+        
+        Date of Birth: <input type="date" name="dob"><br><br>
+        
+        
+        <button type="submit" name="submit">Submit</button>
+    </form>
+</body>
+</html>
